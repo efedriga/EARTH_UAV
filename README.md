@@ -38,7 +38,7 @@ Il software richiede l'installazione di un interprete Python versione 3.9 o supe
 1. Clonazione del repository:
 
    ```bash
-   git clone INSERIRE IL LINK
+   git clone https://github.com/efedriga/EARTH_UAV.git
    cd EARTH-UAV
    ```
 
