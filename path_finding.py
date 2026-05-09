@@ -85,6 +85,7 @@ class PathFinding(SearchProblem):
         dx, dy, dz = action
 
         cost = sqrt(dx**2 + dy**2 + dz**2)
+        distance = sqrt(dx**2 + dy**2 + dz**2)
 
         if self.level >= 2:
             if dz > 0:
@@ -98,7 +99,7 @@ class PathFinding(SearchProblem):
             wind_effect = (dx * wx) + (dy * wy) + (dz * wz)
             cost -= wind_effect
 
-        cost = max(0.1, cost)
+        cost = max(0.1 * distance, cost) 
         return cost
 
     def get_step_distance(self, state, action, next_state) -> float:

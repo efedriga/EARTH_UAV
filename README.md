@@ -2,7 +2,7 @@
 
 ## Sommario
 
-Questo progetto si occuppa dello sviluppo di E.A.R.T.H. UAV, un sistema di navigazione basato su ricerca informata per l'ottimizzazione energetica delle manovre di Return-To-Home (RTH). Superando l’approccio puramente geometrico dei sistemi commerciali, la soluzione proposta applica l’algoritmo A\* per minimizzare il consumo della batteria, integrando nel calcolo l'impatto della gravità e del vento. L’efficacia del sistema è stata validata attraverso una serie di test a complessità incrementale, dimostrando come l'algoritmo garantisca traiettorie significativamente più efficienti rispetto alle manovre standard.
+Questo progetto si occupa dello sviluppo di E.A.R.T.H. UAV, un sistema di navigazione basato su ricerca informata per l'ottimizzazione energetica delle manovre di Return-To-Home (RTH). Superando l’approccio puramente geometrico dei sistemi commerciali, la soluzione proposta applica l’algoritmo A\* per minimizzare il consumo della batteria, integrando nel calcolo l'impatto della gravità e del vento. L’efficacia del sistema è stata validata attraverso una serie di test a complessità incrementale, dimostrando come l'algoritmo garantisca traiettorie significativamente più efficienti rispetto alle manovre standard.
 
 <p align="center">
   <img src="dashboard.png" width="800">

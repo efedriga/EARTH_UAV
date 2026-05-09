@@ -44,14 +44,14 @@ class AStar(SearchAlgorithm):
         self.reset_expanded()
         while (not frontier.empty()):
             n = frontier.get()
-            if cost[n.state] == n.g:
+            if n.g == cost[n.state]:
                 self.update_expanded(n.state)
                 if (problem.isGoal(n.state)):
                     return self.extract_solution(n)
                 for a,s in problem.getSuccessors(n.state):
                     step_cost = problem.get_step_cost(n.state, a, s)
                     new_cost = n.g + step_cost
-                    if s not in cost or new_cost < cost[s]:
+                    if s not in cost or new_cost < cost[s] - 1e-5:
                         cost[s] = new_cost
                         frontier.put(AstarNode(s, n, a, new_cost, self.w * self.heuristic(s, problem.goal, problem)))
         return None

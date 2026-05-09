@@ -171,7 +171,7 @@ def get_user_inputs() -> tuple:
 
     st.sidebar.markdown("---")
     show_expanded = st.sidebar.toggle("Mostra espansione A*", value=True)
-    show_wind = st.sidebar.toggle("Mostra Vettori Vento", value=True)
+    show_wind = st.sidebar.toggle("Mostra vettori vento", value=True)
 
     return (
         level,

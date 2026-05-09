@@ -12,7 +12,7 @@ def manhattan_energy(start: tuple[int, int, int], goal: tuple[int, int, int], pr
     cost_y = dy * problem.min_cost_xy()
     cost_z = dz * problem.min_cost_z()
 
-    return max(0.1 * (dx + dy + dz), cost_x + cost_y + cost_z) 
+    return max(0.1 * (dx + dy + dz), cost_x + cost_y + cost_z)
 
 def euclidean_energy(start: tuple[int ,int, int], goal: tuple[int, int, int], problem) -> float:
     """
@@ -26,9 +26,7 @@ def euclidean_energy(start: tuple[int ,int, int], goal: tuple[int, int, int], pr
 
     wind_discount = sqrt(dx**2 + dy**2) * (1.0 - problem.min_cost_xy())
 
-    g_discount = 0.0
-    if start[2] > goal[2]:
-        g_discount = dz * (1.0 - problem.min_cost_z())
+    g_discount = dz * (1.0 - problem.min_cost_z())
 
     total_cost = distance - wind_discount - g_discount
 

@@ -157,9 +157,9 @@ def main() -> None:
         m1, m2, m3, m4, m5 = st.columns(5)
         m1.metric("Energia", f"{energy:.2f} u.e.")
         m2.metric("Distanza", f"{distance:.2f} m")
-        m3.metric("Nodi Analizzati", f"{solver.expanded}")
+        m3.metric("Nodi espansi", f"{solver.expanded}")
         m4.metric("Risparmio vs RTH", value=f"{energy_saved_pct:.1f}%")
-        m5.metric("Tempo di Calcolo", f"{execution_time:.2f} s")
+        m5.metric("Tempo di calcolo", f"{execution_time:.2f} s")
 
     # Schermata iniziale
     else:
